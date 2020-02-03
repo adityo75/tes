@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bil1"
+        android:text="MASUKAN BILANGAN 1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"/>
+
+    <EditText
+        android:id="@+id/EditBil1"
+        android:hint="Bilangan 1"
+        android:layout_toRightOf="@id/bil1"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/bil2"
+        android:text="MASUKAN BILANGAN 2"
+        android:layout_below="@id/EditBil1"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/EditBil2"
+        android:hint="Bilangan 2"
+        android:layout_toRightOf="@id/bil2"
+        android:layout_below="@+id/EditBil1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnKali"
+        android:text="KALI"
+        android:layout_below="@id/EditBil2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnBagi"
+        android:text="BAGI"
+        android:layout_below="@id/btnKali"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:text="TAMBAH"
+        android:layout_below="@id/btnBagi"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnKurang"
+        android:text="KURANG"
+        android:layout_below="@id/btnTambah"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/hasil"
+        android:text="HASIL"
+        android:layout_below="@id/btnKurang"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
